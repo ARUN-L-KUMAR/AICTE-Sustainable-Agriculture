@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "title": "AICTE Cycle 3 (2025) - Sustainable Agriculture",
+    "theme": "Crop Disease Detection using AI/ML",
+    "week": 1,
+    "focus": "Data Processing and Cleaning",
+    "date_processed": "2025-08-31 00:14:35",
+    "student_name": "Your Name Here",
+    "submission_type": "Data Processing (30% of project)"
+  },
+  "dataset_info": {
+    "source": "PlantVillage Dataset",
+    "total_images": 7025,
+    "num_classes": 16,
+    "image_dimensions": [
+      128,
+      128,
+      3
+    ],
+    "train_samples": 5620,
+    "test_samples": 1405,
+    "pixel_value_range": [
+      0.0,
+      1.0
+    ],
+    "normalization": "Min-Max scaling (0-1)"
+  },
+  "classes": {
+    "categories": [
+      "Pepper__bell___Bacterial_spot",
+      "Pepper__bell___healthy",
+      "PlantVillage",
+      "Potato___Early_blight",
+      "Potato___healthy",
+      "Potato___Late_blight",
+      "Tomato_Bacterial_spot",
+      "Tomato_Early_blight",
+      "Tomato_healthy",
+      "Tomato_Late_blight",
+      "Tomato_Leaf_Mold",
+      "Tomato_Septoria_leaf_spot",
+      "Tomato_Spider_mites_Two_spotted_spider_mite",
+      "Tomato__Target_Spot",
+      "Tomato__Tomato_mosaic_virus",
+      "Tomato__Tomato_YellowLeaf__Curl_Virus"
+    ],
+    "class_distribution": {
+      "Pepper__bell___Bacterial_spot": 500,
+      "Pepper__bell___healthy": 500,
+      "PlantVillage": 0,
+      "Potato___Early_blight": 500,
+      "Potato___healthy": 152,
+      "Potato___Late_blight": 500,
+      "Tomato_Bacterial_spot": 500,
+      "Tomato_Early_blight": 500,
+      "Tomato_healthy": 500,
+      "Tomato_Late_blight": 500,
+      "Tomato_Leaf_Mold": 500,
+      "Tomato_Septoria_leaf_spot": 500,
+      "Tomato_Spider_mites_Two_spotted_spider_mite": 500,
+      "Tomato__Target_Spot": 500,
+      "Tomato__Tomato_mosaic_virus": 373,
+      "Tomato__Tomato_YellowLeaf__Curl_Virus": 500
+    },
+    "class_weights": {
+      "0": 0.9366666666666666,
+      "1": 0.9366666666666666,
+      "2": 0.9366666666666666,
+      "3": 3.081140350877193,
+      "4": 0.9366666666666666,
+      "5": 0.9366666666666666,
+      "6": 0.9366666666666666,
+      "7": 0.9366666666666666,
+      "8": 0.9366666666666666,
+      "9": 0.9366666666666666,
+      "10": 0.9366666666666666,
+      "11": 0.9366666666666666,
+      "12": 0.9366666666666666,
+      "13": 1.255585344057194,
+      "14": 0.9366666666666666
+    }
+  },
+  "data_quality": {
+    "image_shape_consistency": true,
+    "no_nan_values": true,
+    "no_infinite_values": true,
+    "class_imbalance_ratio": Infinity,
+    "stratified_split": true
+  },
+  "processing_parameters": {
+    "img_size": 128,
+    "max_images_per_class": 500,
+    "min_images_per_class": 50,
+    "test_size": 0.2,
+    "random_state": 42
+  }
+}
