@@ -1,101 +1,132 @@
-🌱 Crop Disease Detection - Week 1 (Data Processing)
+# 🌱 Crop Disease Detection - Week 1 (Data Processing)
 
-This project is part of a machine learning pipeline to detect crop diseases using the PlantVillage dataset.
-Week 1 focuses on data preprocessing and visualization, preparing the dataset for training deep learning models in later weeks.
+This repository contains the **Week 1 work** for a Crop Disease Detection project using the **PlantVillage Dataset**.  
+The focus here is on **data preprocessing** — preparing raw leaf images into a structured dataset suitable for deep learning models.  
+
+---
+
+## 📌 Project Overview
+The **PlantVillage dataset** contains images of healthy and diseased crop leaves.  
+The goal of this project is to:
+- Preprocess images for machine learning.
+- Organize data into training and testing sets.
+- Visualize class distribution and sample images.
+
+This is the **first step (Week 1)** of building a complete **Crop Disease Detection pipeline**.
+
+---
+
+## 📂 Dataset
+- **Source:** [PlantVillage Dataset (Kaggle)](https://www.kaggle.com/datasets/emmarex/plantdisease)  
+- The dataset consists of **54,000+ images** of healthy and diseased plant leaves.  
+- Each folder in the dataset represents a **class (crop + condition)**.  
+
+> ⚠️ **Note:** Due to large size, the dataset is **not included in this repository**.  
+Please download it from Kaggle and place it in the project directory as:
+
+/PlantVillage
+├── Apple___Black_rot
+├── Apple___healthy
+├── Corn___Cercospora_leaf_spot
+├── Corn___healthy
+└── ... etc.
 
 
 ---
 
-📂 Project Structure
+## ⚙️ Steps Implemented (Week 1)
 
-├── PlantVillage/              # Dataset (not included in repo, download separately)
-├── week1_data_processing.py   # Python script for preprocessing & visualization
-└── README.md                  # Project documentation
+1. **Import Libraries**  
+   - `numpy`, `pandas`, `cv2`, `matplotlib`, `seaborn`, `scikit-learn`
 
+2. **Load Dataset**  
+   - Read images from folders  
+   - Resize to `128x128`  
+   - Normalize pixel values (0-1)  
 
----
+3. **Create Labels**  
+   - Each folder is mapped to a **class index**
 
-📊 Features
+4. **Split Dataset**  
+   - Training: 80%  
+   - Testing: 20%  
+   - Stratified split ensures balanced classes  
 
-Loads the PlantVillage dataset (multiple crop disease categories).
-
-Resizes all images to 128x128 pixels.
-
-Normalizes image values (0–1 scale).
-
-Splits dataset into training (80%) and testing (20%) sets with stratification.
-
-Visualizes:
-
-Class distribution across categories.
-
-Sample images from the training set.
-
-
-
+5. **Visualizations**  
+   - Class distribution using `seaborn`  
+   - Sample training images preview  
 
 ---
 
-🚀 How to Run
+## 📊 Example Outputs
 
-1. Clone the Repository
+### ✅ Class Distribution
+Bar chart showing how many images exist per class.
 
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
-
-2. Download Dataset
-
-Download the PlantVillage dataset from Kaggle:
-🔗 PlantVillage Dataset
-
-Extract it into the project folder:
-
-
-<project-folder>/PlantVillage/
-
-3. Install Requirements
-
-pip install numpy pandas matplotlib seaborn opencv-python scikit-learn
-
-4. Run Script
-
-python week1_data_processing.py
-
+### ✅ Sample Images
+Grid of training samples with labels for quick verification.
 
 ---
 
-📈 Outputs
+## 🚀 How to Run
 
-Dataset Info: Shapes of training & test sets.
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/<your-username>/<repo-name>.git
+   cd <repo-name>
 
-Class Distribution Plot: Bar chart of sample counts per class.
+    Install dependencies:
 
-Sample Images: 9 random training images with labels.
+pip install -r requirements.txt
 
+Download dataset from Kaggle and place in the project folder:
 
+/PlantVillage/
 
----
+Run the script:
 
-🔮 Next Steps
+    python week1_data_processing.py
 
-Build a deep learning model (CNN) to classify crop diseases.
+📦 Requirements
 
-Train and evaluate performance on the processed dataset.
+    Python 3.8+
 
-Deploy as a web/mobile application for farmers.
+    numpy
 
+    pandas
 
+    matplotlib
 
----
+    seaborn
 
-⚠️ Note
+    opencv-python
 
-The dataset is not included in this repository due to size limitations.
-Download it manually from Kaggle and place it in the PlantVillage/ directory.
+    scikit-learn
 
+Install with:
 
----
+pip install -r requirements.txt
 
-👨‍💻 Author
+📅 Weekly Progress
 
-ARUN KUMAR L
+    Week 1: Data Processing (✅ Current stage)
+
+    Week 2: Model Building (CNN, Transfer Learning)
+
+    Week 3: Model Training & Evaluation
+
+    Week 4: Deployment & Inference
+
+✨ Future Work
+
+    Train Convolutional Neural Networks (CNNs)
+
+    Implement Transfer Learning (ResNet, VGG, EfficientNet)
+
+    Build Web or Mobile app for farmers to upload leaf images and detect diseases
+
+📌 Acknowledgments
+
+    Dataset: PlantVillage (Kaggle)
+
+Inspiration: Agricultural AI solutions for smart farming
