@@ -45,7 +45,7 @@ This project implements an AI-based crop disease detection system using computer
 - **Week 4**: Testing, deployment, and documentation
 
 ### Contact
-**Student Name**: [Your Name]  
+**Student Name**: [ARUN KUMAR L]  
 **AICTE Cycle 3 (2025) - Sustainable Agriculture**  
 **Theme**: AI/ML for Agricultural Solutions  
 
