@@ -71,8 +71,10 @@ This project implements an **AI-based crop disease detection system** using comp
 
 ### 👤 Author
 
-**Name**: \[ARUN KUMAR L]
+**Name**: ARUN KUMAR L
+
 **Program**: AICTE Cycle 3 (2025) – Sustainable Agriculture
+
 **Theme**: AI/ML for Agricultural Solutions
 
 ---
