@@ -1,53 +1,82 @@
-# AICTE Cycle 3 (2025) - Sustainable Agriculture Project
+# 🌱 AICTE Cycle 3 (2025) - Sustainable Agriculture Project
 
-## Crop Disease Detection using AI/ML
+## 📌 Project: Crop Disease Detection using AI/ML
 
-### Project Description
-This project implements an AI-based crop disease detection system using computer vision and machine learning techniques. The goal is to help farmers identify plant diseases early and take appropriate action to prevent crop loss.
+### 📖 Overview
 
-### Dataset
-- **Source**: PlantVillage Dataset
-- **Classes**: 16 different crop diseases and healthy plants
-- **Images**: 7,025 processed images
-- **Crops**: Tomato, Potato, Pepper (Bell)
+This project implements an **AI-based crop disease detection system** using computer vision and machine learning. The aim is to help farmers **detect plant diseases early** and take corrective measures to reduce crop losses and improve yield.
 
-### Week 1 Progress (30% Complete)
-- [x] Data collection and loading
-- [x] Image preprocessing and cleaning
-- [x] Quality assurance and validation
-- [x] Exploratory data analysis
-- [x] Train-test split preparation
+### 📂 Dataset
 
-### Technologies Used
-- **Python 3.x**
-- **OpenCV** - Image processing
-- **NumPy/Pandas** - Data manipulation
-- **Matplotlib/Seaborn** - Visualization
-- **Scikit-learn** - ML utilities
+* **Source**: PlantVillage Dataset
+* **Crops Covered**: Tomato, Potato, Pepper (Bell)
+* **Classes**: 16 disease categories (including healthy leaves)
+* **Images**: \~7,025 processed images
 
-### Project Structure
+### ✅ Week 1 Progress (30% Completed)
+
+* ✔️ Data collection & dataset organization
+* ✔️ Image preprocessing (resizing, normalization, RGB conversion)
+* ✔️ Data cleaning (invalid/corrupted image handling)
+* ✔️ Quality assurance (shape consistency, pixel range checks)
+* ✔️ Exploratory data analysis (EDA) with visualizations
+* ✔️ Train-test split with stratification
+* ✔️ Computed class weights for balanced training
+
+📊 **Outcome:** Dataset is **clean, validated, balanced (with weights)** and ready for model training (Week 2).
+
+### 🛠️ Technologies Used
+
+* **Python 3.x**
+* **OpenCV** → Image Processing
+* **NumPy / Pandas** → Data Handling
+* **Matplotlib / Seaborn** → Data Visualization
+* **Scikit-learn** → ML Utilities (train-test split, class weights)
+
+### 📂 Project Structure
+
 ```
-├── week1_data_processing.ipynb     # Week 1: Data Processing
-├── week1_exports/                  # Processed data and metadata
-├── PlantVillage/                   # Dataset directory
-└── README.md                       # This file
+├── week1_data_processing.ipynb   # Week 1: Data Processing & EDA
+├── PlantVillage/                 # Dataset directory (ignored in GitHub)
+├── week1_exports/                # Processed metadata & outputs
+├── .gitignore                    # Ignore unnecessary files
+└── README.md                     # Project Documentation
 ```
 
-### How to Run
-1. Clone this repository
-2. Install required packages: `pip install numpy pandas matplotlib seaborn opencv-python scikit-learn`
-3. Download PlantVillage dataset and place in `PlantVillage/` directory
-4. Run `week1_data_processing.ipynb`
+### 🚀 How to Run
 
-### Next Phases
-- **Week 2**: Model development and training
-- **Week 3**: Model optimization and validation
-- **Week 4**: Testing, deployment, and documentation
+1. Clone this repository:
 
-### Contact
-**Student Name**: [Your Name]  
-**AICTE Cycle 3 (2025) - Sustainable Agriculture**  
-**Theme**: AI/ML for Agricultural Solutions  
+   ```bash
+   git clone <your-repo-link>.git
+   cd <repo-name>
+   ```
+2. Install dependencies:
+
+   ```bash
+   pip install numpy pandas matplotlib seaborn opencv-python scikit-learn
+   ```
+3. Download the **PlantVillage dataset** and place it inside the `PlantVillage/` directory.
+4. Run the notebook:
+
+   ```bash
+   jupyter notebook week1_data_processing.ipynb
+   ```
+
+### 📅 Next Phases
+
+* **Week 2 (40–60%)** → Model Development & Initial Training
+* **Week 3 (60–80%)** → Model Optimization & Validation
+* **Week 4 (80–100%)** → Testing, Deployment & Documentation
+
+### 👤 Author
+
+**Name**: \[ARUN KUMAR L]
+**Program**: AICTE Cycle 3 (2025) – Sustainable Agriculture
+**Theme**: AI/ML for Agricultural Solutions
 
 ---
-*Last Updated: 2025-08-31*
+
+✨ *Last Updated: 31 Aug 2025*
+
+---
