@@ -38,7 +38,6 @@ This project implements an **AI-based crop disease detection system** using comp
 ```
 ├── week1_data_processing.ipynb   # Week 1: Data Processing & EDA
 ├── PlantVillage/                 # Dataset directory (ignored in GitHub)
-├── week1_exports/                # Processed metadata & outputs
 ├── .gitignore                    # Ignore unnecessary files
 └── README.md                     # Project Documentation
 ```
@@ -48,8 +47,8 @@ This project implements an **AI-based crop disease detection system** using comp
 1. Clone this repository:
 
    ```bash
-   git clone <your-repo-link>.git
-   cd <repo-name>
+   git clone https://github.com/ARUN-L-KUMAR/AICTE-Sustainable-Agriculture.git
+   cd https://github.com/ARUN-L-KUMAR/AICTE-Sustainable-Agriculture.git
    ```
 2. Install dependencies:
 
