@@ -1,5 +1,3 @@
 # Ignore dataset folder
 PlantVillage/
 *.zip
-*.h5
-*.pkl
