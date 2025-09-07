@@ -160,5 +160,3 @@ jupyter notebook week2_model_training.ipynb
 **Theme:** AI/ML for Agricultural Solutions
 
 ✨ *Last Updated: 07 Sept 2025*
-
-```
