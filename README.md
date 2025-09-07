@@ -12,7 +12,7 @@ The goal is to help farmers detect plant diseases early and take corrective meas
 ---
 
 ## 📂 Dataset  
-- **Source**: PlantVillage Dataset (Kaggle)  
+- **Source**: [PlantVillage Dataset](https://www.kaggle.com/datasets/emmarex/plantdisease)  
 - **Crops Covered**: Tomato, Potato, Pepper (Bell)  
 - **Classes**: 15 disease categories (+ healthy leaves)  
 - **Images Used**: ~7,000 processed images  
