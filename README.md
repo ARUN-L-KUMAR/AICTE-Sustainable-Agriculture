@@ -99,6 +99,7 @@ Without Git LFS, these files will appear as small text pointers instead of the a
 ├── processed_data.pkl              # Preprocessed dataset (via Git LFS)
 ├── PlantVillage/                   # Dataset (ignored in GitHub)
 ├── .gitignore                      # Ignore dataset & cache files
+├── .gitattributes                  # LFS Model & Trained Data
 └── README.md                       # Project Documentation
 ```
 
@@ -158,6 +159,6 @@ jupyter notebook week2_model_training.ipynb
 **Program:** AICTE Cycle 3 (2025) – Sustainable Agriculture
 **Theme:** AI/ML for Agricultural Solutions
 
-✨ *Last Updated: 06 Sept 2025*
+✨ *Last Updated: 07 Sept 2025*
 
 ```
