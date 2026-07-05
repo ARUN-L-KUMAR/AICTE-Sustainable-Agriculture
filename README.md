@@ -141,15 +141,29 @@ Without Git LFS, these files will appear as small text pointers instead of the a
 ## 📂 Project Structure
 
 ```
-├── week1_data_processing.ipynb     # Week 1: Data Processing & EDA
-├── week2_model_training.ipynb      # Week 2: CNN Model Training & Evaluation
-├── crop_disease_model.h5           # Saved trained model (via Git LFS)
-├── training_history.pkl            # Saved training history (via Git LFS)
-├── processed_data.pkl              # Preprocessed dataset (via Git LFS)
-├── PlantVillage/                   # Dataset (ignored in GitHub)
-├── .gitignore                      # Ignore dataset & cache files
-├── .gitattributes                  # LFS Model & Trained Data
-└── README.md                       # Project Documentation
+├── data/
+│   ├── PlantVillage/                   # Raw images dataset (ignored in GitHub)
+│   └── processed_data.pkl              # Preprocessed dataset (via Git LFS)
+├── models/
+│   ├── best_model_week3.h5             # Best checkpoint for week 3 (via Git LFS)
+│   ├── crop_disease_model.h5           # Week 2 model (via Git LFS)
+│   ├── crop_disease_model_week2.h5     # Week 2 model (via Git LFS)
+│   ├── crop_disease_model_week3.h5     # Week 3 model (via Git LFS)
+│   └── crop_disease_model_week3.keras  # Week 3 model in Keras format (via Git LFS)
+├── notebooks/
+│   ├── week1_data_processing.ipynb     # Week 1: Data Processing & EDA
+│   ├── week2_model_training.ipynb      # Week 2: CNN Model Training & Evaluation
+│   ├── week3.ipynb                     # Week 3: Development & Exploration
+│   ├── week3_final.ipynb               # Week 3: Final Model Training & Evaluation
+│   └── final_crop_disease_detection.ipynb # Week 3: Final Combined Notebook (SUBMISSION)
+├── results/
+│   ├── training_history.pkl            # Saved training history (via Git LFS)
+│   ├── training_history_week2.pkl      # Week 2 training history (via Git LFS)
+│   └── training_history_week3.pkl      # Week 3 training history (via Git LFS)
+├── .gitignore                          # Ignore dataset & cache files
+├── .gitattributes                      # LFS Model & Trained Data
+├── Week3_PPT_Summary.md                # Summary presentation text
+└── README.md                           # Project Documentation
 ```
 
 ---
@@ -172,63 +186,33 @@ pip install numpy pandas matplotlib seaborn opencv-python scikit-learn tensorflo
 ### Download Dataset
 
 * Download PlantVillage dataset from Kaggle
-* Place it inside the `PlantVillage/` folder
+* Place it inside the `data/PlantVillage/` folder
 
-### Run Week 1 – Data Processing
+### Run Jupyter Notebooks
 
-```bash
-jupyter notebook week1_data_processing.ipynb
-```
-
-### Run Week 2 – Model Training
+All notebooks are located in the `notebooks/` directory. Launch Jupyter from the project root and navigate to `notebooks/` in the Jupyter interface:
 
 ```bash
-jupyter notebook week2_model_training.ipynb
+# Launch Jupyter Notebook
+jupyter notebook
 ```
 
----
-
-## ✅ Week 3 Progress (100%) – Model Improvements & Final Submission  
-- ✔️ **Data Augmentation** → Rotation, width/height shifts, shear, zoom, horizontal flip  
-- ✔️ **Advanced Callbacks** → EarlyStopping, ModelCheckpoint, ReduceLROnPlateau  
-- ✔️ **Extended Training** → 25 epochs with early stopping for optimal performance  
-- ✔️ **Enhanced Evaluation** → Improved classification report & confusion matrix visualization  
-- ✔️ **Model Optimization** → Better accuracy and robustness through regularization  
-- ✔️ **Final Notebook** → Comprehensive `week3_final.ipynb` combining all weeks  
-- ✔️ **Training History Visualization** → Loss, accuracy, and learning rate curves  
-- ✔️ **Model Saving** → Enhanced model (`crop_disease_model_week3.h5`) and history  
-
-📊 **Final Outcome**: Optimized crop disease detection model ready for deployment.  
+- **Week 1 – Data Processing**: Run `notebooks/week1_data_processing.ipynb`
+- **Week 2 – Model Training**: Run `notebooks/week2_model_training.ipynb`
+- **Week 3 – Final Model**: Run `notebooks/final_crop_disease_detection.ipynb` or `notebooks/week3_final.ipynb`
 
 ---
 
 ## 🔄 Updated Model Workflow (Week 3)  
-1. **Data Loading** → Load processed dataset (Week 1 output)  
+1. **Data Loading** → Load processed dataset (Week 1 output: `data/processed_data.pkl`)  
 2. **Data Augmentation** → ImageDataGenerator for increased dataset diversity  
 3. **Model Loading** → Load Week 2 baseline model for continued training  
 4. **Advanced Training** → Extended epochs with callbacks for optimal performance  
 5. **Enhanced Evaluation** → Comprehensive metrics and visualizations  
 6. **Final Outputs** →  
-   - Improved model → `crop_disease_model_week3.h5`  
-   - Enhanced history → `training_history_week3.pkl`  
-   - Final notebook → `week3_final.ipynb`  
-
----
-
-## 📂 Updated Project Structure
-
-```
-├── week1_data_processing.ipynb             # Week 1: Data Processing & EDA
-├── week2_model_training.ipynb              # Week 2: CNN Model Training & Evaluation  
-├── final_crop_disease_detection.ipynb     # Week 3: Final Combined Notebook (SUBMISSION)
-├── crop_disease_model.h5                   # Trained model (via Git LFS)
-├── training_history.pkl                    # Training history (via Git LFS)
-├── processed_data.pkl                      # Preprocessed Dataset (via Git LFS)
-├── PlantVillage/                           # Dataset (ignored in GitHub)
-├── .gitignore                              # Ignore dataset & cache files
-├── .gitattributes                          # LFS Model & Trained Data
-└── README.md                               # Project Documentation
-```
+   - Improved model → `models/crop_disease_model_week3.h5`  
+   - Enhanced history → `results/training_history_week3.pkl`  
+   - Final notebook → `notebooks/week3_final.ipynb`
 
 ---
 
